@@ -118,8 +118,10 @@ calcBtn.addEventListener("click", (e) => {
     const weight = +wieghtInput.value.replace(",", ".")
     const height = +heightInput.value.replace(",", ".")
 
-    if (!weight || !height) return;
-
+    if (!weight || !height ) {
+        alert("Insira valores válidos.");
+        return;
+    };
     const imc = calcImc(weight, height);
 
     let info;
