@@ -119,7 +119,7 @@ calcBtn.addEventListener("click", (e) => {
     const height = +heightInput.value.replace(",", ".")
 
     if (!weight || !height ) {
-        alert("Insira valores válidos.");
+        alert("Insira valores válidos!");
         return;
     };
     const imc = calcImc(weight, height);
